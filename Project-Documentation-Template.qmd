@@ -1,0 +1,118 @@
+---
+title: "Crops and Livestock Analysis"
+author: "DCA R subgroup Project"
+format: 
+  html:
+    theme: cosmo
+    toc: true
+    toc-title: "Contents"
+    toc-depth: 2
+---
+
+## 1. Introduction
+
+This report documents the steps taken to devlop a churn prediction model using machine learning techniques
+
+### 1.1 Project Title
+
+Crops and Livestock Production Analysis
+
+### 1.2 Aim and Objectives
+
+-   **Aim**: To develop a predictive model that accurately identifies customers who are likely to churn.
+-   **Objectives**:
+    -   Collect and preprocess customer data.
+    -   Explore and analyze the data to identify key features influencing churn.
+    -   Build and evaluate multiple machine learning models.
+    -   Deploy the best-performing model in a user-friendly dashboard.
+
+## 2. Data Information
+
+### 2.1 Data Source
+
+-   **Source**: The dataset is sourced from Kaggle or any other relevant source.
+-   **Description**: The dataset contains customer information, including demographic details, account information, and service usage patterns.
+
+### 2.2 Metadata
+
+-   **Columns**:
+    -   `customerID`: Unique identifier for each customer.
+    -   `gender`: Gender of the customer.
+    -   `SeniorCitizen`: Indicates if the customer is a senior citizen.
+    -   `Partner`: Indicates if the customer has a partner.
+    -   `Dependents`: Indicates if the customer has dependents.
+    -   `tenure`: Number of months the customer has been with the company.
+    -   `PhoneService`: Indicates if the customer has phone service.
+    -   `MultipleLines`: Indicates if the customer has multiple lines.
+    -   `InternetService`: Type of internet service the customer has.
+    -   `OnlineSecurity`: Indicates if the customer has online security.
+    -   `OnlineBackup`: Indicates if the customer has online backup.
+    -   `DeviceProtection`: Indicates if the customer has device protection.
+    -   `TechSupport`: Indicates if the customer has tech support.
+    -   `StreamingTV`: Indicates if the customer has streaming TV.
+    -   `StreamingMovies`: Indicates if the customer has streaming movies.
+    -   `Contract`: Type of contract the customer has.
+    -   `PaperlessBilling`: Indicates if the customer has paperless billing.
+    -   `PaymentMethod`: Method of payment used by the customer.
+    -   `MonthlyCharges`: Monthly charges incurred by the customer.
+    -   `TotalCharges`: Total charges incurred by the customer.
+    -   `Churn`: Indicates if the customer has churned.
+
+## 3. Research Questions
+
+-   What are the key factors that influence customer churn?
+-   How accurately can we predict customer churn using machine learning models?
+-   Which machine learning model performs best for churn prediction?
+
+## 4. Data Cleaning
+
+-   Handle missing values.
+-   Correct data types (e.g., convert `TotalCharges` to numeric).
+-   Remove duplicates.
+
+## 5. Data Preprocessing
+
+-   Normalize numerical features.
+-   Encode categorical features.
+-   Split the data into training and testing sets.
+
+## 6. Data Exploration
+
+-   Summary statistics of the data.
+-   Visualizations (e.g., histograms, bar charts, correlation matrix).
+-   Insights from exploratory data analysis.
+
+## 7. Modelling
+
+-   Define and train multiple models (e.g., logistic regression, decision tree, random forest).
+-   Evaluate models using metrics such as accuracy, precision, recall, ROC curve, feature importance and F1 score.
+-   Select the best-performing model.
+-   Summary of findings and recommendations
+
+## 8. Dashboard Building
+
+-   Use Quarto to create an interactive dashboard.
+-   Include sections for model performance metrics, ROC curve, feature importance, and customer segmentation.
+-   Add interactive filters and visualizations.
+
+## 9. Deployment
+
+-   Deploy the dashboard using a web hosting service (e.g., GitHub Pages, Netlify).
+-   Ensure the dashboard is accessible and user-friendly.
+
+## 10. Collaborators
+
+-   **R4DataScienceNigeria Team**:
+    -   Collaborator 1
+    -   Collaborator 2
+    -   Collaborator 3
+
+## 11. Collaboration and Version Control
+
+-   Initialize a git repository `git init`
+
+-   Add files to the repo `git add`
+
+-   Commit changes \`git commit -m "Initial commit"
+
+-   Push to Github `git push`
