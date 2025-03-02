@@ -1,8 +1,9 @@
 library(purrr)
 c("dplyr", "tidyr", "readr", "stringr", "lubridate") %>%
   walk(~ library(.x, character.only = TRUE))
+
 # load all the data
-file_names <- dir("./data/raw", pattern = "*.csv", full.names = TRUE)
+file_names <- dir("./data/Raw", pattern = "*.csv", full.names = TRUE)
 data_frames <- map(file_names, read_csv)
 # temperature data------------------------------------------------------------------------------------
 temperature <- 
@@ -44,3 +45,4 @@ pesticides <-
 ## write clean data to file---------------------------------------------------------------------------
 list(price, temperature, pesticides, land_use) %>% 
   imap(~ saveRDS(.x, paste0("./data/clean/", .y, ".RDS")))
+
