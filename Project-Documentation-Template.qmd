@@ -1,6 +1,8 @@
 ---
 title: "Crops and Livestock Analysis"
 author: "DCA Rgroup Project"
+=======
+author: "DCA R subgroup Project"
 format: 
   html:
     theme: cosmo
@@ -12,6 +14,8 @@ format:
 ## 1. Introduction
 
 This project will analyze the production trends for crops and livestock products in Africa, using data from the FAO covering 278 agricultural products. The analysis will explore how production quantities, harvested arrears and yields have evolved across different crops and livestocks categories over the years. Additionally, it will investigate the relationship between yield and weather condition, pesticides.
+=======
+This report documents the steps taken to devlop a churn prediction model using machine learning techniques
 
 ### 1.1 Project Title
 
@@ -32,14 +36,21 @@ Crops and Livestock Production Analysis
 -   Identify key drivers that influence crop yields.
 
 -   Create a dashboard to present insights and provide a brief summary of the findings
+-   **Aim**: To develop a predictive model that accurately identifies customers who are likely to churn.
+-   **Objectives**:
+    -   Collect and preprocess customer data.
+    -   Explore and analyze the data to identify key features influencing churn.
+    -   Build and evaluate multiple machine learning models.
+    -   Deploy the best-performing model in a user-friendly dashboard.
 
 ## 2. Data Information
 
 ### 2.1 Data Source
-
 -   **Source**: This data is gotten from the Food and Agriculture Organization of the United Nations covering 278 agricultural products
 
 -   **ription**: The dataset contains 278 agricultural product information.
+-   **Source**: The dataset is sourced from Kaggle or any other relevant source.
+-   **Description**: The dataset contains customer information, including demographic details, account information, and service usage patterns.
 
 ### 2.2 Metadata
 
@@ -77,6 +88,9 @@ Crops and Livestock Production Analysis
 -   Are there specific crops or livestock products that show a consistent upward or downward trends in yields?
 
 -   How accurate can we predict yields from key drivers that influence crop yield?
+-   What are the key factors that influence customer churn?
+-   How accurately can we predict customer churn using machine learning models?
+-   Which machine learning model performs best for churn prediction?
 
 ## 4. Data Cleaning
 
